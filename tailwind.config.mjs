@@ -8,8 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'black': '#000000',
+        'tiffany-blue': '#5FBBC4',
+        'maximum-blue': '#4CAFCE',
+        'celestial-blue': '#4098C2',
+        'lapis-lazuli': '#2374A7',
+        'gunmetal': '#1E2833',
+        'cardinal-red': '#C8202F',
       },
     },
   },
