@@ -1,8 +1,10 @@
+import { FaLinkedin, FaInstagram, FaSlack } from "react-icons/fa";
+
 const Footer = () => {
     return (
-      <footer className="bg-black text-white p-4">
+      <footer className="bg-black text-white p-2 bottom-0 left-0 w-full z-10 shadow-md border-t border-celestial-blue">
         <div className="container mx-auto text-center">
-          <p className="mb-2">Follow us on:</p>
+          <p className="mb-2">Connect with us on:</p>
           <div className="flex justify-center space-x-4">
             <a
               href="https://www.linkedin.com/company/neu-acm/posts/?feedView=all"
@@ -10,7 +12,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-tiffany-blue"
             >
-              LinkedIn
+              <FaLinkedin size={28} />
             </a>
             <a
               href="https://acmnortheaste-ufq4028.slack.com/join/shared_invite/zt-2tvi4bbwl-~iCfzBRxEYW1FfKioWH6ew#/shared-invite/email"
@@ -18,7 +20,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-tiffany-blue"
             >
-              Slack
+              <FaSlack size={28} />
             </a>
             <a
               href="https://www.instagram.com/northeasternacm/"
@@ -26,7 +28,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="hover:text-tiffany-blue"
             >
-              Instagram
+              <FaInstagram size={28} />
             </a>
           </div>
           <br></br>
