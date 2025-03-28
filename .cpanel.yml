@@ -1,1 +1,17 @@
-yarn start
+---
+deployment:
+  tasks:
+    # Define paths for frontend and backend (if applicable)
+    - export DEPLOYPATH=/home/[user]/public_html/nextjs_project
+    
+    # Copy project files to the deployment path
+    - /bin/cp -R * $DEPLOYPATH
+    
+    # Install dependencies
+    - npm install --prefix $DEPLOYPATH
+    
+    # Build the Next.js project
+    - npm run build --prefix $DEPLOYPATH
+    
+    # Start the Next.js server
+    - npm run start --prefix $DEPLOYPATH
